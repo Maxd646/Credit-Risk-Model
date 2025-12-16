@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run batch predictions")
     parser.add_argument("--data-path", type=Path, required=True, help="Path to CSV with new data")
-    parser.add_argument("--model-path", type=Path, default=Path("artifacts/model.pkl"))
+    parser.add_argument("--model-path", type=Path, default=Path("main/model.pkl"))
     parser.add_argument("--out-csv", type=Path, default=Path("predictions.csv"))
     return parser.parse_args()
 

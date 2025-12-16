@@ -1,3 +1,9 @@
+"""
+Proxy target engineering using RFM + K-Means.
+
+Adds a binary column ``is_high_risk`` that flags the customer cluster with the
+lowest engagement (low frequency & low monetary spend, high recency).
+"""
 
 from __future__ import annotations
 
