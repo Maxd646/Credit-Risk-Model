@@ -15,7 +15,6 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 
 
 
-
 def load_dataset(path: str | Path, nrows: int | None = None) -> pd.DataFrame:
     """Load CSV or Excel dataset given a single path.
 
@@ -39,7 +38,6 @@ def load_dataset(path: str | Path, nrows: int | None = None) -> pd.DataFrame:
 
 
 
-
 def quick_summary(df: pd.DataFrame) -> pd.DataFrame:
     """Return basic summary (dtype, non-null %, unique #) for each column."""
     return (
@@ -58,8 +56,6 @@ def describe_numeric(df: pd.DataFrame) -> pd.DataFrame:
     return df[num_cols].describe().T
 
 
-
-# Visualization helpers
 
 def plot_num_distributions(df: pd.DataFrame, cols: Sequence[str] | None = None, bins: int = 30) -> None:
     """Plot histograms for numeric columns (or provided subset)."""
