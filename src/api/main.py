@@ -10,7 +10,7 @@ from src.api.pydantic_models import PredictionResponse, Transaction
 from src.data_processing import engineer_features
 import pandas as pd
 
-MODEL_PATH = Path("artifacts/model.pkl")
+MODEL_PATH = Path("main/model.pkl")
 
 app = FastAPI(title="Credit Risk Scoring API", version="0.1.0")
 
