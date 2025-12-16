@@ -12,8 +12,9 @@ try:
 except ImportError:
     WoE = None
 
+# ---------------------------------------------------------------------------
 # Column constants
-
+# ---------------------------------------------------------------------------
 ID_COL = "CustomerId"
 DATETIME_COL = "TransactionDate"
 AMOUNT_COL = "Amount"
@@ -21,9 +22,9 @@ TARGET = "FraudResult"
 
 AGG_SUFFIXES = ["_sum", "_mean", "_count", "_std"]
 
-
+# ---------------------------------------------------------------------------
 # Custom transformers
-
+# ---------------------------------------------------------------------------
 class Aggregator(BaseEstimator, TransformerMixin):
     def __init__(self, id_col=None, amount_col=None):
         self.id_col = id_col or ID_COL
@@ -57,6 +58,10 @@ class DatetimeExtractor(BaseEstimator, TransformerMixin):
         X[f"{self.datetime_col}_year"] = dt.dt.year
         return X
 
+
+# ---------------------------------------------------------------------------
+# Pipeline builder
+# ---------------------------------------------------------------------------
 def build_pipeline() -> Pipeline:
     numeric_features = [
         f"{AMOUNT_COL}_sum",
@@ -104,6 +109,9 @@ def build_pipeline() -> Pipeline:
     )
 
 
+# ---------------------------------------------------------------------------
+# WoE helper (USED OUTSIDE PIPELINE)
+# ---------------------------------------------------------------------------
 def apply_woe(X: pd.DataFrame, y: pd.Series) -> pd.DataFrame:
     if WoE is None:
         raise ImportError("xverse is not installed. Cannot apply WoE.")
