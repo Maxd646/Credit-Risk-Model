@@ -311,9 +311,9 @@ Automated pipeline includes:
 ## Author
 
 **Your Name**
-- LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
-- GitHub: [github.com/yourusername](https://github.com/yourusername)
+- LinkedIn: [linkedin.com/in/danielkebede](https://www.linkedin.com/in/daniel-kebede/)
+- Email: ethiomiracle2017@gmail.com
+- GitHub: [github.com/Maxd646](https://github.com/Maxd646)
 
 ---
 
