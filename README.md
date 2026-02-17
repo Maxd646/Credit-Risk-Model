@@ -222,8 +222,7 @@ The Streamlit dashboard provides:
 - **Model Performance Metrics:** ROC-AUC, Precision, Recall, F1 scores
 - **Data Insights:** Customer risk distribution and feature analysis
 
-![Dashboard Preview](https://via.placeholder.com/800x400?text=Dashboard+Screenshot)
-
+[alt text](image.png)
 ### API Endpoint Example
 ```bash
 curl -X POST "http://localhost:8000/predict" \
