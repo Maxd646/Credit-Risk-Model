@@ -313,7 +313,6 @@ Automated pipeline includes:
 - LinkedIn: [linkedin.com/in/danielkebede](https://www.linkedin.com/in/daniel-kebede/)
 - Email: ethiomiracle2017@gmail.com
 - GitHub: [github.com/Maxd646](https://github.com/Maxd646)
-
 ---
 
 ## References
